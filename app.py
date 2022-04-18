@@ -5,6 +5,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from helpers import login_required, login_user, logout_user
 from datetime import date
 from activities import get_all_topics, get_random_activity  
+import os
 
 
 app = Flask(__name__) # Initialize Flask app
@@ -256,5 +257,6 @@ def aboutus():
 
 
 if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))
     db.create_all()
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=port)
