@@ -1,6 +1,17 @@
 # Make Time
 
-## Table Of Contents 
+## Contributers
+
+- [Sohaib Ahmed](https://github.com/Sohaib-50)
+- [Roconx](https://github.com/Roconx)
+- [Top Of Tech](https://github.com/Top-Of-Tech)
+- [codingdude](https://github.com/codingdudepy)
+- 777Advait
+
+*Note: We worked on a different repository but couldn't host that so we made this copy, hence only one contributer is showing up on Github.*
+
+## Table Of Contents
+
 - [Link To The Website](https://github.com/codingdudepy/Make-Time#link-to-the-webiste-)
 - [The Main Idea](https://github.com/codingdudepy/Make-Time#the-main-idea-)
 - [How The Site Helps Put Everything Into Action](https://github.com/codingdudepy/Make-Time#how-the-site-helps-put-everything-into-action-)
@@ -8,7 +19,7 @@
 
 ## Link to the webiste 🔗
 
-TODO: put link here
+[https://make-time-timathon.herokuapp.com/](https://make-time-timathon.herokuapp.com/)
 
 ## Abstract 📄
 
@@ -44,19 +55,13 @@ The following features of our site help put the ideas discussed above into actio
 
 #### Daily Highlight
 
-TODO: add image of daily highlight page
-
 Each day, write down you daily highlight with a planned time here. Research has shown writing stuff down increases the likelyhood of one actually doing them. This page also shows you the past history of your daily highlights, so you can look back and see what you've achieved in the past.
 
 #### Might-Do List
 
-TODO: add image of daily mightdolist page
-
 This page implements the idea of might-do list. Items can be ticked off when done and unticked items of each day are transferred to the next day.
 
 #### Activities Suggestor
-
-TODO: add image of daily activity suggestor page
 
 Can't think of a daily highlight on any day? Or done with the daily highlight but bored and nothing more left to do? Let us suggest an activity! Use the activity suggestor page to choose from the list of topics given and get an activity suggested from one of them.
 
