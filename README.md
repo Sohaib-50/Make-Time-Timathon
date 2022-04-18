@@ -76,6 +76,7 @@ Can't think of a daily highlight on any day? Or done with the daily highlight bu
 
   * Flask
   * Flask-Session
+  * Flask-SQLAlchemy
 
 ##### Run the web app
 
