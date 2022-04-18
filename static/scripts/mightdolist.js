@@ -30,8 +30,16 @@ document.querySelectorAll(".taskcheckbox").forEach(function (element) {
         var done = element.checked;
         $.post('/updatetask', { task_id: task_id, done: done }, function (data, status) {
             if (status == 'success') {
+                console.log("updated");
                 // toggle checkbox
                 element.checked = !element.checked;
+                var description_td = document.getElementById("task_" + task_id);
+                if (element.checked) {
+                    description_td.style.textDecoration = "line-through";
+                }
+                else {
+                    description_td.style.textDecoration = "none";
+                }
             }
         });
     });

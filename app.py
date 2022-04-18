@@ -102,25 +102,21 @@ def register():
         # Check if the username is already taken
         elif User.query.filter_by(username=username).first():
             flash("An account with the same username already exists!", "error")
-            print("An account with the same username already exists!")
             return redirect(url_for("register"))
 
         # Check if the email is already taken
         elif User.query.filter_by(email=email).first():
             flash("An account with the same email already exists!", "error")
-            print("An account with the same email already exists!")
             return redirect(url_for("register"))
 
         # Check if the passwords match
         if password != confirm_password:
             flash("Passwords do not match!", "error")
-            print("Passwords do not match!")
             return redirect(url_for("register"))
 
         # check if password is atleast 4 characters long
         elif len(password) < 4:
             flash("Password must be atleast 4 characters long!", "error")
-            print("Password must be atleast 4 characters long!")
             return redirect(url_for("register"))
         
         # Create a new user if all checks passed
@@ -248,8 +244,8 @@ def updatetask():
     task = MightDoTask.query.filter_by(user_id=session["user_id"], _id=task_id).first()
     task.done = not task.done
     db.session.commit()
-    print(task.done)
     return jsonify({"success": True})
+
 
 @app.route("/aboutus")
 def aboutus():

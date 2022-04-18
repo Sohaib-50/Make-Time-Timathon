@@ -62,7 +62,7 @@
                     {% for task in tasks %}
                     <tr>
                         {% if task.done %}
-                        <td class="col-md-10"><del> {{ task.description }} </del></td>
+                        <td class="col-md-10" style="text-decoration: line-through;" id="task_{{ task._id }}"> {{ task.description }} </td>
                         <td class="col-md-2">
                             <div class="form-check">
                                 <input class="form-check-input taskcheckbox" type="checkbox" value=""
@@ -70,7 +70,7 @@
                             </div>
                         </td>
                         {% else %}
-                        <td class="col-md-10">{{ task.description }}</td>
+                        <td class="col-md-10" id="task_{{ task._id }}">{{ task.description }}</td>
                         <td>
                             <div class="form-check">
                                 <input class="form-check-input taskcheckbox" type="checkbox" value=""
