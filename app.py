@@ -146,7 +146,7 @@ def dailyhighlight():
     if request.method == "GET":
         dailyhighlights = Highlight.query.filter_by(user_id=session["user_id"]).order_by(Highlight.highlight_date.desc()).all()
         todays_highlight = Highlight.query.filter_by(user_id=session["user_id"], highlight_date=today).first()  # get today's highlight if it exists
-        return render_template("dailyhighlight.html", title="Daily Highlight", dailyhighlights=dailyhighlights, todays_highlight=todays_highlight, today=today)
+        return render_template("DailyHighlight.html", title="Daily Highlight", dailyhighlights=dailyhighlights, todays_highlight=todays_highlight, today=today)
     else:
         if request.form.get("save"):  # daily highlight saved
             # get the form data
