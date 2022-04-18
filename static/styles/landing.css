@@ -153,7 +153,7 @@ nav ul li {
 }
 
 footer {
-    color: black;
+    color: black !important;
     text-align: center;
     padding: 6px;
 }

@@ -134,7 +134,7 @@ header h3 {
 
 
 footer {
-  color: black;
+  color: black !important;
   text-align: center;
   padding: 6px;
   font-size: 0.7rem;
@@ -143,6 +143,10 @@ footer {
 footer a {
   color: black;
   text-decoration: underline;
+}
+
+footer h5 {
+  color: black !important;
 }
 
 footer a:hover {
