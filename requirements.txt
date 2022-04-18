@@ -1,0 +1,6 @@
+# run "pip install -r requirements.txt" in command prompt / terminal
+# while inside the folder containing this file
+# to install the following libraries/modules required for this project
+
+flask
+Flask-Session

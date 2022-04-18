@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+
+{% block head %}
+<!-- custom stylesheet -->
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/dailyhighlight.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row page-header text-center">
+        <h1>Daily Highlight - {{ today.strftime('%d %B %Y, %A') }} </h1>
+        <h6> Set your intention for the day by choosing a daily highlight, the most important task for the day. It may
+            not be the only thing you want to do today but it is something you definitely want to do! Choose a task that
+            is either urgent or will bring you satisfaction / joy. </h6>
+    </div>
+
+    <div class="row d-flex flex-row justify-content-center">
+        {% if not todays_highlight.done %}
+        <div class="col-md-8">
+            <div class="card">
+                <form action="{{ url_for('dailyhighlight') }}" method="POST" class="text-center">
+                    <div class="form-group text-left">
+                        <label for="highlight">Highlight (eg: write first draft of essay)</label>
+                        <input required type="text" class="form-control" name="highlight" id="highlight"
+                            placeholder="Highlight" value="{{ todays_highlight.description if todays_highlight }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Planned Time (eg: 2-4 pm)</label>
+                        <input type="text" class="form-control" name="time" id="time" placeholder="Time"
+                            value="{{ todays_highlight.planned_time if todays_highlight }}">
+                    </div>
+                    {% if not todays_highlight %}
+                    <button type="submit" name="save" value="save" class="btn btn-primary text-center">Save</button>
+                    {% else %}
+                    <button type="submit" name="update" value="update"
+                        class="btn btn-primary text-center">Update</button>
+                    <button type="submit" name="done" value="done" class="btn btn-primary text-center">Mark as Done <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                        </svg> </button>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3> Today's Highlight (Done! <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                        </svg>) </h3>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ todays_highlight.description }}</h5>
+                    {% if todays_highlight.planned_time %}
+                    <p class="card-text">Planned Time: {{ todays_highlight.planned_time }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- list of past daily highlights (from database) -->
+    <div class="row d-flex flex-row justify-content-center pt-5">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Past Highlights</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Highlight</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Achieved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for dailyhighlight in dailyhighlights %}
+                            <tr>
+                                <td>{{ dailyhighlight.description }}</td>
+                                <td>{{ dailyhighlight.highlight_date.strftime('%d %B %Y, %A') }}</td>
+                                <td class="text-center">
+                                    {% if dailyhighlight.done %}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-lg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                    </svg>
+                                    {% else %}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                                    </svg>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    {% if not dailyhighlights %}
+                    <p class="text-center">No highlights yet!</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<!-- custom stylesheet -->
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/aboutus.css') }}">
+{% endblock %}
+
+
+{% block body %}
+<!-- A page to tell about the all the developers of the site -->
+<div class="container">
+    <div class="row page-header text-center">
+        <h1> About Us</h1>
+        <h6> Here is the team behind this website. We got together to make this project for the <a target="_blank"
+                href="https://twtcodejam.net/"> Timathon
+            </a> competition. </h6>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="card-header d-flex flex-row justify-content-start align-items-center">
+                <h3>                            <img src="static/images/soah.jpg" height="40">
+                    Sohaib Ahmed </h3>
+                <p> &nbsp;- Third year computer systems engineering undergraduate student from Pakistan </p>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>
+                        <p>
+                            <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/sohaibahmedabbasi" target="_blank">
+                                https://www.linkedin.com/in/sohaibahmedabbasi </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Github:</b> <a href="https://github.com/sohaib-50/"
+                                target="_blank">https://github.com/sohaib-50/ </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="card">
+            <div class="card-header d-flex flex-row justify-content-start align-items-center">
+                <h3 class="card-title"><img src="static/images/roc.jpg" height="40">  Roconx </h3>
+                <p> &nbsp;- First year computer science student from spain </p>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>
+                        <p>  
+                            <b>Github:</b> <a href="https://github.com/Roconx" target="_blank"> https://github.com/Roconx </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="card">
+            <div class="card-header d-flex flex-row justify-content-start align-items-center">
+                <h3 class="card-title"><img src="static/images/topio.png" height="40"> Top Of Tech </h3>
+                <p> &nbsp;- Located in the United States </p>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>
+                        <p>
+                            <b>Github:</b> <a href="https://github.com/Top-Of-Tech" target="_blank"> https://github.com/Top-Of-Tech </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                
+                <h3 class="card-title">                            <img src="static/images/codingdudepy.png" height="40=">
+                    codingdude  </h3>
+            </div>
+            
+            <div class="card-body">
+                <ul>
+                    <li>
+                        <p>
+                            <b>Github:</b> <a href="https://github.com/codingdudepy" target="_blank"> https://github.com/codingdudepy </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row pb-4">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"> 777advait </h3>
+            </div>
+            <div class="card-body">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    {% endblock %}

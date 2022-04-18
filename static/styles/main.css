@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&family=Updock&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #716F81;
+  color: white;
+}
+
+#maketime {
+  font-family: 'Impact, fantasy	';
+}
+
+header a {
+  color: #F2E1C1;
+}
+
+header a:hover {
+  color: #F6AE99;
+}
+
+nav {
+  padding: 0;
+}
+nav ul {
+  list-style: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #F6AE99;
+}
+
+nav ul li {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+header h1 {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  color: #F6AE99;
+}
+
+header h3 {
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0;
+  color: #F2E1C1;
+}
+
+
+/* for flashes */
+.alert {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  opacity: 1;
+  transition: opacity 0.05s; /* 600ms to fade out */
+  background-color: #B97A95;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: #716F81;
+}
+
+.page-header {
+  /* width: 100%; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee; 
+  background-color: white;
+}
+
+.page-header a {
+  color: black;
+  text-decoration: underline;
+}
+
+.page-header h1 {
+  color: #B97A95;
+  font-family: 'Impact, fantasy';
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #716F81 !important;
+  border:rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-primary:hover {
+  background-color: #B97A95 !important;
+  border:rgba(0, 0, 0, 0.1) !important;
+}
+
+.testingborder {
+  border: 3px solid white;
+}
+
+.primarypink {
+  color: #B97A95;
+}
+
+
+footer {
+  color: black;
+  text-align: center;
+  padding: 6px;
+  font-size: 0.7rem;
+}
+
+footer a {
+  color: black;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #716F81;
+}
+
+li {
+  list-style: none;
+}
+
+.w3-btn {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  color:white;
+  background-color: #525e75dc;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.w3-btn:hover {
+  color: white;
+  background-color: #B97A95;
+  text-decoration: none;
+
+}

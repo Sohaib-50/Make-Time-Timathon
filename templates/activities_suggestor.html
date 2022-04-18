@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<!-- custom stylesheet -->
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/activities_suggestor.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row page-header text-center">
+        <h1> Activities Suggestor </h1>
+        <h6>
+            {% if not activity %}
+            Bored? Can't think of anything to do today? Let us help in deciding!
+            {% else %}
+            Here's a suggested activity!
+            {% endif %}
+        </h6>
+    </div>
+
+    {% if not activity %}
+    <!-- a form with checkboxes with 2 activities per row -->
+    <form action="{{ url_for('activities_suggestor') }}" method="POST">
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    <h3> Select topic(s) </h3>
+                </div>
+                <div class="card-body">
+                    {% for topic in topics %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="topics" value="{{ topic }}"
+                            id="{{ topic }}">
+                        <label class="form-check-label" for="topic{{ topic.id }}">
+                            {{ topic }}
+                        </label>
+                    </div>
+                    {% endfor %}
+                    <div class="row">
+                        <div class="col-md-12 d-flex flex-row justify-content-center align-items-center p-0 m-0">
+                            <button type="submit" class="btn btn-primary btn-block"> Suggest me an activity
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    {% else %}
+    <!-- The activity's description shown beautifully -->
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <h3> <b> Activity: </b> {{ activity.name }} </h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p> <b>Topic: </b> {{ topic }} </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p> <b>Decription: </b> {{ activity.description }} </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-flex flex-row justify-content-center align-items-center p-0 m-0">
+                        <a href="{{ url_for('activities_suggestor') }}" class="btn btn-primary btn-block">
+                            Suggest me another activity
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+{% endblock %}

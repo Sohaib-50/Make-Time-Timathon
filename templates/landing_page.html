@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- custom styles -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/landing.css') }}">
+
+    <!-- Scroll animations -->
+    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+</head>
+
+<body class="jumbotron">
+    <div class="jumbotron bg">
+        <header>
+            <div class="container">
+                <div class="row d-flex flex-row justify-content-center align-items-center p-0 pb-2 m-0 border-bottom">
+                    <div class="col-md-5 d-flex flex-column justify-content-center p-0 m-0">
+                        <a href="{{ url_for('index') }}">
+                            <h1 id="maketime">
+                                Make Time
+                            </h1>
+                        </a>
+                        <h3>
+                            Make every day meaningful, productive, and enjoyable.
+                        </h3>
+                    </div>
+
+                    <div class="col-md-7 d-flex flex-row justify-content-end align-items-center p-0 m-0">
+                        <nav class="d-flex flex-row justify-content-center align-items-center">
+                            <ul class="d-flex flex-row justify-content-between">
+
+                                {% if session.user_id %}
+                                <li><a href="{{ url_for('dailyhighlight') }}" class="w3-btn">Daily Highlight</a></li>
+                                <li><a href="{{ url_for('mightdolist') }}" class="w3-btn">Might-Do List</a></li>
+                                <li><a href="{{ url_for('activities_suggestor') }}" class="w3-btn">Activities Suggestor</a></li>
+                                <li><a href="{{ url_for('logout') }}" class="w3-btn">Log Out</a></li>
+                                {% else %}
+                                
+                                <li><a href="{{ url_for('login') }}" class="w3-btn">Log In</a></li>
+                       
+                                <li><a href="{{ url_for('register') }}" class="w3-btn">Register</a></li>
+                                {% endif %}
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+      
+            </div>
+        </header>
+
+        <div class="jumbotron about1 pt-5">
+            <div class="container">
+                <div data-aos="zoom-out">
+                    <h2>
+                        Does your life feel boring? When you think of the past few weeks, does it all seem like a blur?
+                        <br>
+                        <br>
+                        Make Time is here to help you make the most of your time and make everyday more meaningful,
+                        productive,
+                        and enjoyable.
+                        <br>
+                        <br>
+                    </h2>
+                    <p>
+                        Scroll down to know how.
+                    </p>
+                    <br>
+                    <!-- scroll down icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        <path fill-rule="evenodd"
+                            d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="jumbotron about about2 d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+            <div class="row text-center">
+                <h3 data-aos="fade-up">
+                    This website, Make Time, is inspired by the book "Make Time" by authors Jake Knapp and John
+                    Zeratsky. There are 2 main things that make our lives seem so monotonous and boring:
+                </h3>
+            </div>
+
+            <div class="row">
+                <h4 data-aos="fade-right"> (1) <u> Busy Bandwagon</u> (Endless Tasks) </h4>
+                <p data-aos="fade-right"> The belief brought onto us by society that if we're not busy at all times,
+                    i.e.
+                    working super hard all the time, we're doing something wrong.<br><br> </p>
+            </div>
+
+            <div class="row">
+                <h4 data-aos="fade-right"> (2) <u> Infinity Pools</u> (Endless Distractions) </h4>
+                <p data-aos="fade-right"> Applications and services with infite amount of content that refreshes
+                    every
+                    second, that keep us
+                    distracted. </p>
+                </h4>
+            </div>
+
+            <div class="row text-center">
+                <h3 data-aos="fade-up">
+                    We always seem to have a lot of things we could be doing. The more we get done (by riding the
+                    busy
+                    bandwagon), the more we have to do.
+                    After riding the busy bandwagons we get distracted by the infinity pool and end up wasting our
+                    days.
+                </h3>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="jumbotron about about3 d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+            <div class="row text-center">
+                <h3 data-aos="fade-up">
+                    How can we avoid all of this? How can we make time for the stuff that actually matters, the
+                    stuff
+                    that is important to us, the stuff that makes us grow and feel good? We can't just work harder
+                    and
+                    longer.
+                </h3>
+            </div>
+
+            <div class="row text-center">
+                <h3 data-aos="fade-up">
+                    Instead, we need to be more <b> intentional </b> about our time. And for that comes in the
+                    concept of
+                    <b> <u> Daily Highlights </u> </b>. We tend to remember peak moments, specially in the long run.
+                    So
+                    if
+                    each day we achieve that peak moment, a daily highlight, our days will start to feel better and
+                    we'll
+                    feel more accomplished.
+                </h3>
+            </div>
+
+            <hr data-aos="fade-right">
+
+            <div class="row text-center">
+                <h2 data-aos="fade-up" style="font-size: 1.4rem;">
+                    A daily highlight can be something from one of these categories:
+                </h2>
+            </div>
+
+            <div class="row d-flex flex-row justify-content-between align-items-center text-center" data-aos="fade-up">
+                <h2 style="font-size: 1.4rem;"> - <u> <b> Urgency </b> </u> </h2>
+                <h2 style="font-size: 1.4rem;"> - <u> <b> Satisfaction </b> </u> </h2>
+                <h2 style="font-size: 1.4rem;"> - <u> <b> Joy </b> </u> </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron about about4 d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+            <!-- <div data-aos="zoom-out" class="row">
+                <h2 class="text-center">
+                </h2>
+                <br>
+                <br>
+            </div> -->
+
+            <div class="row text-center pb-5">
+                <h2 data-aos="fade-up">
+                    So how can this site help you put all of that into action?
+                </h2>
+            </div>
+
+            <div class="row d-flex flex-row justify-content-center align-items-center">
+                <div  data-aos="fade-right" class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-stars" viewBox="0 0 16 16">
+                        <path
+                            d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                    </svg>
+                    <a href="{{ url_for('dailyhighlight') }}">
+                        <h4> Daily Highlight </h4>
+                    </a>
+                    <p>
+                        Write down the task you most want to get done each day in the Daily Highlight section
+                        with a
+                        planned time. During the planned time, work with laser focus to get the highlight done.
+                        Research has shown that writing down a task makes it more likely that you'll do it.
+                        <br>
+                        <br>
+                        If you get the thing that means most to you everyday, in the long term your life will
+                        feel
+                        amazing.
+                    </p>
+                </div>
+                <div data-aos="fade-up" class="col-md-4 d-flex flex-column justify align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-list-ul" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <a href="{{ url_for('mightdolist') }}">
+                        <h4> Might-Do List </h4>
+                    </a>
+                    <p>
+                        Basically a todo list but called 'might-do' to prevent the feeling of guilt if you don't
+                        get
+                        everything done. We can't be super productive everyday. If each day we get our daily
+                        some tasks from the might-do list in addition to the all important daily highlight,
+                        we'll
+                        make great progress
+                        in the long term and each day will feel great.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </div>
+                <div data-aos="fade-left" class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-dice-3" viewBox="0 0 16 16">
+                        <path
+                            d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z" />
+                        <path
+                            d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-4-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                    </svg>
+                    <a href="{{ url_for('activities_suggestor') }}">
+                        <h4> Activities Suggestor </h4>
+                    </a>
+                    <p>
+                        Bored? Can't think of a daily highlight? Or done with the daily highlight but don't have
+                        anything else to do? Let our activity suggestor help!
+                        <br>
+                        <br>
+                        Choose from the list of given topics on the activity suggestor page and we'll suggest a
+                        fun
+                        activity for you to do.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="jumbotron footer mt-auto border-top">
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-between">
+                <div class="col-md-6 d-flex flex-column justify-content-start align-items-start">
+                    <h5> Make Time - A project for <a target="_blank" href="https://twtcodejam.net/"> Timathon
+                        </a> </h5>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-end align-items-end">
+                    <a href="{{ url_for('aboutus') }}">
+                        <h5> About Us </h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+</body>
+
+</html>

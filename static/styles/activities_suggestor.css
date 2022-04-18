@@ -1,0 +1,13 @@
+.card-header {
+    background: white;
+}
+
+.card {
+    background: white;
+    -webkit-box-shadow: 0 0 5px 2px #fff;
+    -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 23px rgba(255, 255, 255, 0.4);
+    color: #716F81;
+    border: none;
+    font-size: 1.2rem;
+}

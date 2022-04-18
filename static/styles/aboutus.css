@@ -1,0 +1,40 @@
+.card {
+    margin: 5px;
+    border-color: #B97A95;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+}
+
+.card-header {
+    background-color: white;
+    border: none;
+}
+
+.card-header h3 {
+    color: #B97A95;
+    margin: 0;
+}
+
+.card-header p {
+    color: #716F81;
+
+}
+
+p {
+    color: #716F81;
+    margin-bottom: 0;
+}
+
+.card a {
+    color: black;
+    text-decoration: underline;
+}
+
+.card-body {
+    padding: 0;
+}
+
+ul {
+    padding-left: 4rem;
+}

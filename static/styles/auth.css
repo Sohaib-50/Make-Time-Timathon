@@ -1,0 +1,34 @@
+body {
+    background: rgb(113, 111, 129);
+    background: radial-gradient(circle, rgba(113, 111, 129, 1) 0%, rgba(185, 122, 149, 1) 100%);
+}
+
+.card-header {
+    background-color: #716F81;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+form {
+    background: #f4f7f8;
+    color: #716F81;
+}
+
+.card {
+    background: #f4f7f8;
+    -webkit-box-shadow: 0 0 5px 2px #fff;
+    -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    color: #716F81;
+    border: none;
+}
+
+form button {
+    background-color: #716F81 !important;
+    border: rgba(0, 0, 0, 0.1) !important;
+}
+
+.form-group {
+    padding-bottom: 15px;
+}

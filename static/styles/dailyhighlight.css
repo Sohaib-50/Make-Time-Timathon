@@ -1,0 +1,31 @@
+
+.form-group
+{
+    /* border: 2px solid grey; */
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+.card {
+    background: white;
+    -webkit-box-shadow: 0 0 5px 2px #fff;
+    -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 23px rgba(255, 255, 255, 0.4);
+    color: #716F81;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.card-header {
+    background: white;
+}
+
+.highlight_form
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+

@@ -1,0 +1,524 @@
+{
+    "Meditation": [
+        {
+            "id": 1,
+            "name": "4-4-4 Breathing",
+            "description": "Take 4 seconds to INHALE (through your nose). HOLD your inhale at the top for 4 seconds. Take 4 seconds to EXHALE (through your mouth)"
+        },
+        {
+            "id": 2,
+            "name": "4-7-8 Breathing",
+            "description": "Next, close your lips, inhaling silently through your nose as you count to four in your head. Then, for seven seconds, hold your breath. Make another whooshing exhale from your mouth for eight seconds."
+        },
+        {
+            "id": 3,
+            "name": "Mantra Meditation",
+            "description": "Perform mantra meditation for 5-10 min"
+        },
+        {
+            "id": 4,
+            "name": "Mindfulness Meditation",
+            "description": "Perform mindfulness meditation for 5-10 min"
+        },
+        {
+            "id": 5,
+            "name": "Walking Meditation",
+            "description": "Have you tried to medidate while walking?"
+        },
+        {
+            "id": 6,
+            "name": "Body Scan Meditation",
+            "description": "The body scan meditation is an exercice that allows you to tune out distractions while focusing on various areas of the body"
+        },
+        {
+            "id": 7,
+            "name": "Progresive Muscle Relaxation",
+            "description": "Progressive muscle relaxation is a simple exercise where you tense and release all the muscles in your body, working your way up from the feet and toes to the head"
+        },
+        {
+            "id": 8,
+            "name": "Visualization Meditation",
+            "description": "Visualization is a beautiful way to calm and relax the body, it can also help you sleep"
+        },
+        {
+            "id": 9,
+            "name": "Blackboard Meditation",
+            "description": "Counting is another good way to help you fall asleep. The blackboard technique involves writing numbers down on a chalkboard and then erasing them in your mind."
+        },
+        {
+            "id": 10,
+            "name": "Focused Meditation",
+            "description": "Focused meditation is a technique where you choose to focus on something like an object with solitary intent. You would focus on this object to the exclusion of all other things"
+        },
+        {
+            "id": 11,
+            "name": "Gratitude Meditation",
+            "description": "Gratitude Meditation is a practice where you reflect on all the gifts in your life. As you experience positive emotions like gratitude, loving-kindness, and compassion, your awareness broadens, and your creativity and problem-solving capacities expand"
+        },
+        {
+            "id": 12,
+            "name": "Conscious Observation",
+            "description": "Pick up an object you have lying around. Any object will do. Hold the object in your hands and allow your attention to be fully absorbed by the object. If you are holding a coffee mug, notice how it feels in your hands. Don’t over-analyze it either, allow yourself to be present in the moment"
+        },
+        {
+            "id": 13,
+            "name": "Transcendental Meditation",
+            "description": "Transcendental meditation is a meditation technique that is designed to help you increase your awareness, and it can also help you avoid thoughts that may be distracting"
+        }
+    ],
+    "Walking": [
+        {
+            "id": 1,
+            "name": "Walk",
+            "description": "Go for a 30 min walk"
+        },
+        {
+            "id": 2,
+            "name": "Walk",
+            "description": "Go for a 20 min walk"
+        },
+        {
+            "id": 3,
+            "name": "New",
+            "description": "Go walking to a place you have not been before"
+        },
+        {
+            "id": 4,
+            "name": "Errand",
+            "description": "Do an errand you wouldn't have normally done by walking"
+        },
+        {
+            "id": 5,
+            "name": "Walk with Friends",
+            "description": "Go on a walk with friends that you have not seen in a while"
+        }
+    ],
+    "Socializing": [
+        {
+            "id": 1,
+            "name": "Someone New",
+            "description": "Get to know a new person"
+        },
+        {
+            "id": 2,
+            "name": "Old Acquaintance",
+            "description": "Get back in touch with someone who used to be your friend or acquaintance"
+        },
+        {
+            "id": 3,
+            "name": "Eat with a friend",
+            "description": "Meet up with a friend that you have not seen in a while"
+        },
+        {
+            "id": 4,
+            "name": "Movie Night",
+            "description": "Watch a movie with some friends that you have not seen in a while"
+        },
+        {
+            "id": 5,
+            "name": "Group Walk",
+            "description": "Go on a walk with friends that you have not seen in a while"
+        },
+        {
+            "id": 6,
+            "name": "Walk with Friends",
+            "description": "Go on a walk with friends that you have not seen in a while"
+        }
+    ],
+    "Drawing": [
+        {
+            "id": 1,
+            "name": "Draw Yourself",
+            "description": "Draw yourself using a photo or a mirror for reference"
+        },
+        {
+            "id": 2,
+            "name": "Bicicle",
+            "description": "Draw a bicicle either realistically or in a fun way"
+        },
+        {
+            "id": 3,
+            "name": "Dragon",
+            "description": "Draw a dragon with a knight, a chinese dragon or a friendly dragon"
+        },
+        {
+            "id": 4,
+            "name": "Family Member",
+            "description": "Draw a family member using either a photo or them as a model"
+        },
+        {
+            "id": 5,
+            "name": "Feather",
+            "description": "Draw a feather, you can draw it either with great detail or in an icon style"
+        },
+        {
+            "id": 6,
+            "name": "T-Shirt",
+            "description": "Draw your favourite t-shirt"
+        },
+        {
+            "id": 7,
+            "name": "Fashion Sketch",
+            "description": "Come up with your own fashion designs or take inspiration from some of the leading fashion designers to create your own fashion sketches"
+        },
+        {
+            "id": 8,
+            "name": "Alien",
+            "description": "The best part about aliens as a drawing idea? You can make them look like almost anything your imagination can think of, since it is very rare to actually see them in real-life"
+        },
+        {
+            "id": 9,
+            "name": "Pirate Ship",
+            "description": "Ahoy Matey! Pirate ships are a great thing to draw in your sketchbook and can be realistic or make your own cartoon"
+        },
+        {
+            "id": 10,
+            "name": "Butterfly",
+            "description": "There are so many different kinds of beautiful butterflies you could draw, such as monarchs or swallowtail butterflies"
+        },
+        {
+            "id": 11,
+            "name": "Super Hero",
+            "description": "It's a bird, it's a plane…it's super man! Draw one of your favorite super heroes or create your own!"
+        },
+        {
+            "id": 12,
+            "name": "Dinosaur",
+            "description": "Dinosaur…roar! Draw a T-rex, a brontosaurus, a triceratops, pterodactyl or a velociraptor if you wish – there are so many great dinosaurs to choose from as sketchbook inspiration!"
+        },
+        {
+            "id": 13,
+            "name": "Web Icons",
+            "description": "Web icons have become so common place we see them everywhere online. Sketch some icons for your favorite social media channels or visit a site like flaticon.com for inspiration!"
+        }
+    ],
+    "Running": [
+        {
+            "id": 1,
+            "name": "Mile PR",
+            "description": "Try to set a 1 mile personal record"
+        },
+        {
+            "id": 2,
+            "name": "10%",
+            "description": "Run 10% more than last day"
+        },
+        {
+            "id": 3,
+            "name": "5K PR",
+            "description": "Try to set a 5 Km personal record"
+        },
+        {
+            "id": 4,
+            "name": "New Route",
+            "description": "Go running on a new route"
+        },
+        {
+            "id": 5,
+            "name": "5K, 10K, half marathon ",
+            "description": "Run a 5K, a 10K and a half marathon in one month"
+        },
+        {
+            "id": 6,
+            "name": "GPS Art",
+            "description": "Try to make a drawing using the GPS while running"
+        },
+        {
+            "id": 7,
+            "name": "Trial Runnning",
+            "description": "Go running in a nearby trail"
+        },
+        {
+            "id": 8,
+            "name": "Run With a Friend",
+            "description": "Running with a friend and try learning thing you didn't know about him"
+        },
+        {
+            "id": 9,
+            "name": "Challenge Others",
+            "description": "Challenge someone to join you in a competition to see who can run the further in a week"
+        },
+        {
+            "id": 10,
+            "name": "30 Day Streak",
+            "description": "Run at least a mile every day for 30 days"
+        },
+        {
+            "id": 11,
+            "name": "Half Marathon",
+            "description": "Run a half marathon"
+        },
+        {
+            "id": 12,
+            "name": "Marathon",
+            "description": "Run a full marathon"
+        },
+        {
+            "id": 13,
+            "name": "Uphill Running",
+            "description": "Running uphill helps you build speed and strength in tendons and joints"
+        }
+    ],
+    "Coding": [
+        {
+            "id": 1,
+            "name": "Learn Web Development",
+            "description": "Start your journey of becoming a web dev by learning frontend languages \nGradually level up your skills by learning backend too."
+        },
+        {
+            "id": 2,
+            "name": "Learn Python",
+            "description": "New to programming? Well, Python being beginner-friendly might be the language of your choice."
+        },
+        {
+            "id": 3,
+            "name": "Learn Angular 11",
+            "description": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript."
+        },
+        {
+            "id": 4,
+            "name": "Build your own app",
+            "description": "Build an app with any language of your choice."
+        },
+        {
+            "id": 5,
+            "name": "Catch up with the tech trends",
+            "description": "Technology trend awareness as a skill refers to being mindful of the technology that is recently becoming popular and is readily accepted in the market or industry."
+        },
+        {
+            "id": 6,
+            "name": "Explore Blockchains",
+            "description": "Blockchain is a shared, immutable ledger that facilitates the process of recording transactions and tracking assets in a business network."
+        },
+        {
+            "id": 7,
+            "name": "Learn Data Science",
+            "description": "Data science is the field of study that combines domain expertise, programming skills, and knowledge of mathematics and statistics to extract meaningful insights from data."
+        }
+    ],
+    "Gardening": [
+        {
+            "id": 1,
+            "name": "Make a mini vegetable gaarden in your baclony",
+            "description": "A garden that exists to grow vegetables and other plants useful for human consumption"
+        },
+        {
+            "id": 2,
+            "name": "Water your plants",
+            "description": "To prevent your plants from wilting in sun, they need plenty of water."
+        },
+        {
+            "id": 3,
+            "name": "Weeding",
+            "description": "reduce the risk of these pests infecting our desirable plants."
+        },
+        {
+            "id": 4,
+            "name": "Sowing new seeds",
+            "description": "Sow a new seed everyday in an attempt to contribute to the nature's beauty"
+        }
+    ],
+    "Fitness": [
+        {
+            "id": 1,
+            "name": "Catch up with the GYM",
+            "description": "Dramatically increase your chances of actually getting fit."
+        },
+        {
+            "id": 2,
+            "name": "Aerobics",
+            "description": "Increase your stamina, fitness and strength."
+        },
+        {
+            "id": 3,
+            "name": "Play any sport of your choice",
+            "description": "Reduce risk of obesity and feel the healthy growth of bones, muscles, ligaments and tendons."
+        },
+        {
+            "id": 4,
+            "name": "Athletics",
+            "description": "Exercise and sport triggers chemicals in the brain that can make you feel happier and relaxed."
+        },
+        {
+            "id": 4,
+            "name": "Go for a walk",
+            "description": "Prevent or manage various conditions, including heart disease, stroke, high blood pressure, cancer and type 2 diabetes."
+        },
+        {
+            "id": 5,
+            "name": "Heavy calisthenics",
+            "description": "Improves your mobility, reduce aches and pains, and decrease your risk for injury."
+        },
+        {
+            "id": 6,
+            "name": "Squats",
+            "description": "Increases lower body and core strength, as well as flexibility in your body."
+        },
+        {
+            "id": 7,
+            "name": "Lunges",
+            "description": "Promotes functional moveent, while also increasing the strength in your legs and glutes."
+        },
+        {
+            "id": 8,
+            "name": "Standing overhead dumbbell presses",
+            "description": "Compound exercise, which utilize multiple joints and muscle, are perfect for busy bees as they work several parts of yur body at once."
+        },
+        {
+            "id": 8,
+            "name": "Side planks",
+            "description": "Helps developing a strong healthy body."
+        },
+        {
+            "id": 9,
+            "name": "Planks",
+            "description": "An effective way to target both your abdominal muscles and your whole body."
+        }
+    ],
+    "Cooking": [
+        {
+            "id": 1,
+            "name": "Pumpkin soup",
+            "description": "This is Australia's most cooked dishes of all time."
+        },
+        {
+            "id": 2,
+            "name": "Easy fried rice",
+            "description": "Even kids will love this quick and easy fried rice, perfect for a weeknight meal"
+        },
+        {
+            "id": 3,
+            "name": "Classic shephard's pie",
+            "description": "You can't go past a classic shephard's pie for a satisfying Sunday lunch."
+        },
+        {
+            "id": 4,
+            "name": "Impossible quiche",
+            "description": "A beautiful golden brown ham and cheese quiche that will delight the whole family."
+        },
+        {
+            "id": 5,
+            "name": "Thai beef salad",
+            "description": "The aromatic asian salad combines lemony-flavoured coriander leaves with cool cucumber, refreshing mint and rare beef"
+        },
+        {
+            "id": 6,
+            "name": "Curried sausages",
+            "description": "The aromatic asian salad combines lemony-flavoured coriander leaves with cool cucumber, refreshing mint and rare beef"
+        },
+        {
+            "id": 7,
+            "name": "San choy bau",
+            "description": "The family will love these tasty little pork mince parcels wrapped in lettuce leaves."
+        },
+        {
+            "id": 8,
+            "name": "Classic butter chicken",
+            "description": "The classic Indian dish is a favourite in Aussie households."
+        },
+        {
+            "id": 9,
+            "name": "Pea & ham soup",
+            "description": "The traditional pea and ham soup at tis best."
+        },
+        {
+            "id": 10,
+            "name": "Spaghetti carbonara",
+            "description": "Quick, easy and delicious - try this carbonara and see if you think it''s the best"
+        },
+        {
+            "id": 11,
+            "name": "Spaghetti bologanese",
+            "description": "This delicious spaghetti main is diabetes-friendly, naking it suitable for everyone's dinner"
+        },
+        {
+            "id": 12,
+            "name": "Potato and leek soup",
+            "description": "The whole family will enjoy this easy to make potato and leek soup"
+        },
+        {
+            "id": 13,
+            "name": "Beef nachos",
+            "description": "Dive into a piping bowl of beef nachos topped with melted cheese"
+        }
+    ],
+    "Travelling": [
+        {
+            "id": 1,
+            "name": "Visit a place in your city",
+            "description": "You don't need to go very far to find a place you have never been to, try to find a new interesting spot in your city"
+        },
+        {
+            "id": 2,
+            "name": "Bike Tour",
+            "description": "Have you ever visited a city by bike? If you haven't, now is a great time to do it for the first time!"
+        },
+        {
+            "id": 3,
+            "name": "Scuba Diving",
+            "description": "You might have visited lost of cities, but have you ever visited the dephts of the ocean?"
+        },
+        {
+            "id": 4,
+            "name": "Zip Lining",
+            "description": "Zip lining is a great way to visit a place from another perspective!"
+        },
+        {
+            "id": 5,
+            "name": "Virtual Tour",
+            "description": "You might have visited lots of places, but have you ever visited a non existent place?"
+        },
+        {
+            "id": 6,
+            "name": "Another Perspective",
+            "description": "Visit a city that you have already visited but try to visit places that you have not visited before!"
+        },
+        {
+            "id": 7,
+            "name": "Camping",
+            "description": "You may have visited lots of cities and stayed on lots of hotels, but have you tried camping on your own?"
+        },
+        {
+            "id": 8,
+            "name": "Local Food",
+            "description": "Travelling is not only visiting new places but also discovering new experiences or flavors, make sure to try local food sometimes!"
+        }
+    ],
+    "Biking": [
+        {
+            "id": 1,
+            "name": "Bike Climbing",
+            "description": "You surely have ridden your bike through lots of different places, but have you ever climbed a mountain? Go to your nearest mountain and find a route to climb it!"
+        },
+        {
+            "id": 2,
+            "name": "Bike Tour",
+            "description": "Have you ever visited a city by bike? If you haven't, now is a great time to do it for the first time!"
+        },
+        {
+            "id": 3,
+            "name": "No car day",
+            "description": "Today is a special day, that means that you will have to use your bike instead of using your car!"
+        },
+        {
+            "id": 4,
+            "name": "Mountain Biking",
+            "description": "Riding a bike on a mountain is a great challenge to test some of your biking skills such as endurance and balance!"
+        },
+        {
+            "id": 5,
+            "name": "Virtual Biking",
+            "description": "You might have ridden a bike through lots of different places, but have you ever ridden a bike in a virtual world?"
+        },
+        {
+            "id": 6,
+            "name": "Ride With Friends",
+            "description": "Doing things with friends is way better than doing it on your own, ask some of your friends if they want to go on a ride with you!"
+        },
+        {
+            "id": 7,
+            "name": "Bike Route",
+            "description": "Have you ever done a route by bike, if you haven't, this a great oportunity to do it!"
+        }
+    ]
+}

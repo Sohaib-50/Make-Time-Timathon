@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<!-- custom stylesheet -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/auth.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container py-5">
+    <div class="row d-flex flex-row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Log In</h3>
+                </div>
+                <div class="card-body">
+                    <form action="{{ url_for('login') }}" method="POST">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="username"
+                                placeholder="Enter username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
